@@ -11,23 +11,6 @@
  const containerRoot = document.getElementById('root');
 
 
- //Mostrar data
- /*const showData = (dataA) => {
-     let result = '';
-     dataA.forEach(element => {
-         result = containerRoot.innerHTML += `
-         <div class="card">
-         <div class="img">
-         <img src="${element.characterImageFull}"> 
-         </div>
-         </div>`
-     });
-     return result;
- }
- window.onload = showData(dataA);*/
-
-
-
 //Mostrando la Data
 const showData = (dataA) => {
     let result = '';
@@ -37,19 +20,39 @@ const showData = (dataA) => {
 
         
 
-//Función para ver personajes
+//Función para ver data
  function characterActors(dataP){
     // limpio div
    containerRoot.innerHTML = '';
    dataP.forEach(element => {
        containerRoot.innerHTML += `
-        <div class="card">
+       <div class="card" style="width: 18rem;">
+  <img src="${element.characterImageFull}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Nombre: ${element.characterName}</h5>
+    <p class="card-text">Actor: ${element.actorName}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">${element.houseName}</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>`
+
+
+
+
+       /*<div class="card">
            <div class="box">
                 <div class="img">
                    <img src="${element.characterImageFull}"></div>
-                   <h2>Name:${element.characterName}<span>Actor: ${element.actorName}</span></h2>
+                   <h2>Name: ${element.characterName}<br><span>Actor: ${element.actorName}</span></h2>
            </div>
-        </div>`
+        </div>*/
     });
 }
 
@@ -57,3 +60,4 @@ const showData = (dataA) => {
 
 window.onload = showData(dataA);
 //no todos tienen houseName
+
