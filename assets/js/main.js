@@ -1,6 +1,6 @@
 
  // Creando variable para data de personajes
- const dataA = (DATA.characters);
+ const dataA = window.data.characters;
  //llamo a mi root
  const containerRoot = document.getElementById('root');
 
@@ -43,12 +43,5 @@ window.onload = showData(dataA);
 
 
 
-       /*<div class="card">
-           <div class="box">
-                <div class="img">
-                   <img src="${element.characterImageFull}"></div>
-                   <h2>Name: ${element.characterName}<br><span>Actor: ${element.actorName}</span></h2>
-           </div>
-        </div>*/
-//no todos tienen houseName
+
 

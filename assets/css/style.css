@@ -55,7 +55,7 @@
     width: 30%;
     height: 30%;
   }*/
-/*
+
   .card-img-top{
     width: 70%;
     height: 50%;
@@ -79,4 +79,11 @@
     border-radius: 1em;
     text-align: center;
     align-content: flex-start;
-  }*/
+  }
+
+  .btn{
+    width: 30%;
+    height: 30%;
+    border-radius: 5px;
+    font: 1.2em sans-serif;
+  }
