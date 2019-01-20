@@ -3873,4 +3873,4 @@ const DATA =
     ]
 }
 
-window.DATA = DATA;
+//window.DATA = DATA;

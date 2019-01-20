@@ -33,14 +33,10 @@ const showData = (dataA) => {
     <p class="card-text">Actor: ${element.actorName}</p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">${element.houseName}</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+    <li class="list-group-item">Casa: ${element.houseName}</li>
+    <li class="list-group-item">Hermanos: ${element.siblings}</li>
+    <li class="list-group-item">Apodo: ${element.nickname}</li>
   </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
 </div>`
 
 
