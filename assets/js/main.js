@@ -1,12 +1,6 @@
-/**
- * 
- * Acá va solo el manejo del DOM
- * 
- */
+
  // Creando variable para data de personajes
  const dataA = (DATA.characters);
-//Creando data episodios
-//const episodes = (window.EPISODES.episodes);
  //llamo a mi root
  const containerRoot = document.getElementById('root');
 
@@ -17,8 +11,6 @@ const showData = (dataA) => {
     characterActors(dataA);
     return result;
 }
-
-        
 
 //Función para ver data
  function characterActors(dataP){
@@ -38,6 +30,15 @@ const showData = (dataA) => {
     <li class="list-group-item">Apodo: ${element.nickname}</li>
   </ul>
 </div>`
+    });
+}
+
+window.onload = showData(dataA);
+
+
+
+
+
 
 
 
@@ -49,11 +50,5 @@ const showData = (dataA) => {
                    <h2>Name: ${element.characterName}<br><span>Actor: ${element.actorName}</span></h2>
            </div>
         </div>*/
-    });
-}
-
-
-
-window.onload = showData(dataA);
 //no todos tienen houseName
 
