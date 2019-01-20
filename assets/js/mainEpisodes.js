@@ -8,8 +8,16 @@ const dataB =  window.episodes.episodes
 //Mostrando la Data
 const showDataE = (dataB) => {
     let result = '';
-   dataB.forEach(element => {
-       result = containerRoot2.innerHTML += `
+    episod(dataB); 
+    return result;
+}
+
+//Función para ver data
+ function episod(dataE){
+    // limpio div
+   containerRoot2.innerHTML = '';
+   dataE.forEach(element => {
+       containerRoot2.innerHTML += `
        <div class="card">
        <div class="box">
             <div class="href">
@@ -17,12 +25,7 @@ const showDataE = (dataB) => {
                <h2>Temporada: ${element.seasonNum}<br><span>Episodio: ${element.episodeNum}</span></h2>
        </div>
     </div>`
-      
     });
-    return result;
 }
 
-
-
 window.onload = showDataE(dataB);
-
