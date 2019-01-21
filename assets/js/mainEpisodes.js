@@ -3,7 +3,7 @@
 const dataB =  window.episodes.episodes
  //llamo a mi root
  const containerRoot2 = document.getElementById('root2');
- const filterTemps = document.getElementById('season')
+
 
 
 //Mostrando la Data
@@ -12,7 +12,7 @@ const showDataE = (dataB) => {
     episod(dataB); 
     return result;
 }
-
+const filterTemps = document.getElementById('season')
 //Filtrando
 filterTemps.addEventListener('change', () => {
     let condition = filterTemps.value
@@ -28,12 +28,15 @@ filterTemps.addEventListener('change', () => {
    containerRoot2.innerHTML = '';
    dataE.forEach(element => {
        containerRoot2.innerHTML += `
-       <div class="card">
+       <div class="target col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
+       <div class="card-episode">
        <div class="box">
             <div class="href">
-               <a href="${element.episodeLink}"></div>
-               <h2>Episodio: ${element.episodeNum}<br><span>Temporada: ${element.seasonNum}</span></h2>
+               <div "${element.episodeLink}"></div>
+               <h2>Capítulo: ${element.episodeNum}<br><h4>"${element.episodeTitle}"</h4><h3>Temporada: ${element.seasonNum}</h3></h2>
        </div>
+    </div>
+    <p>${element.episodeDescription}</p>
     </div>`
     });
 }

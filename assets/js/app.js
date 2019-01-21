@@ -6,10 +6,13 @@
 //Función para filtrar
 const filterSeason = (dataB, condition) => {
     //filter es un ciclo iterativo como el for, forech, reviw
-    const filteredSeason= dataB.filter(element => {
-        return element.seasonNum === condition
+   if (condition == 0){
+       return dataB;
+   }
+    const filteredSeason = dataB.filter(element => {
+        return element.seasonNum == condition
     })
     return filteredSeason;
   };
-  window.filterSeason=filterSeason;
+  window.filterSeason = filterSeason;
   
