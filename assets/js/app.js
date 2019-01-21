@@ -14,5 +14,6 @@ const filterSeason = (dataB, condition) => {
     })
     return filteredSeason;
   };
+  
   window.filterSeason = filterSeason;
   
