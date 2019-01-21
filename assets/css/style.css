@@ -57,3 +57,14 @@
   .img-fluid{
     width: 100%;
   }
+
+  .bodys{
+  background-image: url("../imagenes/personajes2.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+  font-family: "Flexo-Regular",arial,sans-serif;
+  font-size: 16px;
+  color: #fff;
+  }
