@@ -23,10 +23,10 @@ filterTemps.addEventListener('change', () => {
     })
 
 //Función para ver data
- function episod(dataE){
+ function episod(dataB){
     // limpio div
    containerRoot2.innerHTML = '';
-   dataE.forEach(element => {
+   dataB.forEach(element => {
        containerRoot2.innerHTML += `
        <div class="target col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
        <div class="list-group">

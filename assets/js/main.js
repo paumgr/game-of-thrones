@@ -13,10 +13,10 @@ const showData = (dataA) => {
 }
 
 //Función para ver data
- function characterActors(dataP){
+ function characterActors(dataA){
     // limpio div
    containerRoot.innerHTML = '';
-   dataP.forEach(element => {
+   dataA.forEach(element => {
        containerRoot.innerHTML += `
        <div class="target col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
          <div class="card">
