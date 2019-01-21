@@ -18,18 +18,12 @@ const showData = (dataA) => {
    containerRoot.innerHTML = '';
    dataP.forEach(element => {
        containerRoot.innerHTML += `
-       <div class="card" style="width: 18rem;">
-  <img src="${element.characterImageFull}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Nombre: ${element.characterName}</h5>
-    <p class="card-text">Actor: ${element.actorName}</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Casa: ${element.houseName}</li>
-    <li class="list-group-item">Hermanos: ${element.siblings}</li>
-    <li class="list-group-item">Apodo: ${element.nickname}</li>
-  </ul>
-</div>`
+       <div class="target col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
+         <div class="card">
+          <img src="${element.characterImageFull}" class="img" alt="Personaje GOT">
+          <h5 class="card-title">${element.characterName}</h5>
+         </div>
+       </div>`
     });
 }
 
