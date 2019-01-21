@@ -34,7 +34,8 @@ filterTemps.addEventListener('change', () => {
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">Capítulo: ${element.episodeNum}</h5>
     </div>
-    <p class="mb-1">"${element.episodeTitle}"</p>
+    <p class="mb-1">"${element.episodeTitle}"</p><br>
+    <h8> ${element.episodeDescription}</h8><br>
     <small class="text-muted">Temporada: ${element.seasonNum}.</small>
   </a>
 </div>
