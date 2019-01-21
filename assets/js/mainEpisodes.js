@@ -29,17 +29,18 @@ filterTemps.addEventListener('change', () => {
    dataE.forEach(element => {
        containerRoot2.innerHTML += `
        <div class="target col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6">
-       <div class="card-episode">
-       <div class="box">
-            <div class="href">
-               <div "${element.episodeLink}"></div>
-               <h2>Capítulo: ${element.episodeNum}<br><h4>"${element.episodeTitle}"</h4><h3>Temporada: ${element.seasonNum}</h3></h2>
-       </div>
+       <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Capítulo: ${element.episodeNum}</h5>
     </div>
-    <p>${element.episodeDescription}</p>
-    </div>`
+    <p class="mb-1">"${element.episodeTitle}"</p>
+    <small class="text-muted">Temporada: ${element.seasonNum}.</small>
+  </a>
+</div>
+</div>
+       `
     });
 }
 
 window.onload = showDataE(dataB);
-
